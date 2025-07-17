@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main ()
+{
+    int N, M ;
+
+    while(1) // while(1) means infinite loop (This loop will keep running again and again forever, unless you use a break; to stop it.)
+    {
+        scanf("%d%d",&N,&M);
+
+        if (N==0 && M==0)
+        {
+            break;
+        }
+        int box[10001] = {0}, x, z=0; // box[10001] for using infinite loop and every array's box is 0
+
+        for (int i = 0 ; i < M ; i++)
+        {
+            scanf("%d", &x);
+            box[x]++;
+
+            if (box[x] == 2)
+            {
+                z++;
+            }
+
+        }
+        printf("%d\n", z);
+
+    }
+    return 0;
+}
