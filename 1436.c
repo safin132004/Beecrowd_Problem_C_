@@ -1,25 +1,21 @@
 #include<stdio.h>
 int main ()
 {
-    int T,i;
-    scanf("%d",&T);
-
-    for ( i = 0 ; i < T ; i++ )
+    int box[2001] = {0};
+    int N,x ;
+    scanf("%d", &N );
+    for (int i = 0 ; i < N ; i++)
     {
-        int N ;
-        scanf("%d", &N);
+        scanf("%d",&x);
+        box[x]++;
+    }
 
-        int age[10] = {0};
-
-        for ( int j = 0 ; j < N ; j++ )
+    for (int i = 1 ; i <= 2000 ; i++ )
+    {
+        if (box[i] > 0)
         {
-            scanf("%d", &age[j]);
+            printf("%d aparece %d vez(es)\n", i, box[i]);
         }
-
-        int c = age[N / 2];
-
-        printf("Case %d: %d\n", i+1, c );
-
     }
     return 0 ;
 
