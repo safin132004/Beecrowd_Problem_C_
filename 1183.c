@@ -1,10 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int x[12][12], i, j;
+    float x[12][12], sum = 0.0;
+    int i, j;
     char s;
     scanf("%c",&s);
-    float n, sum ;
+
     for (int i = 0; i < 12; i++) // row
     {
 
@@ -15,12 +16,11 @@ int main()
     }
     for (int i = 0; i < 12; i++) // row
     {
-        int k =1;
 
-        for (int j = k; j < 12; j++) // coloum
+        for (int j = i +1 ; j < 12; j++) // coloum
         {
             sum = sum + x[i][j];
-            k++;
+           
         }
     }
     
