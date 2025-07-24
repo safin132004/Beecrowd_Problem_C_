@@ -26,7 +26,7 @@ int main()
     
     if(s == 'M')
     {
-        sum = sum / 12.0 ;
+        sum = sum / 66.0 ;
     }
     printf("%.1f\n", sum);
 
