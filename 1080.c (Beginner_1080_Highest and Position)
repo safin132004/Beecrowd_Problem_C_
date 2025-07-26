@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int number, max_value = 0, max_pos = 0;
+
+    for (int i = 1; i <= 100; i++)
+    {
+        scanf("%d", &number);
+        if (number > max_value)
+        {
+            max_value = number;
+            max_pos = i;
+        }
+    }
+
+    printf("%d\n%d\n", max_value, max_pos);
+
+    return 0;
+}
