@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, X;
+    int nc = 0, oc = 0;
+
+    scanf("%d", &N);
+
+    for (int i = 0; i < N; i++)
+    {
+        scanf("%d", &X);
+        if (X >= 10 && X <= 20)
+        {
+            nc++;
+        }
+        else
+        {
+            oc++;
+        }
+    }
+
+    printf("%d in\n", nc);
+    printf("%d out\n", oc);
+
+    return 0;
+}
