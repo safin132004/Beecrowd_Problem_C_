@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, num, t = 0;
+    int x = 0, y = 0, z = 0;
+    char s;
+
+    scanf("%d", &N);
+
+    for (int i = 0; i < N; i++)
+    {
+        scanf("%d %c", &num, &s);
+        t += num;
+
+        if (s == 'C')
+        {
+            x += num;
+        }
+        else if (s == 'R')
+        {
+            y += num;
+        }
+        else if (s == 'S')
+        {
+            z += num;
+        }
+    }
+
+    printf("Total: %d cobaias\n", t);
+    printf("Total de coelhos: %d\n", x);
+    printf("Total de ratos: %d\n", y);
+    printf("Total de sapos: %d\n", z);
+
+    printf("Percentual de coelhos: %.2f %%\n", (x * 100.0) / t);
+    printf("Percentual de ratos: %.2f %%\n", (y * 100.0) / t);
+    printf("Percentual de sapos: %.2f %%\n", (z * 100.0) / t);
+
+    return 0;
+}
