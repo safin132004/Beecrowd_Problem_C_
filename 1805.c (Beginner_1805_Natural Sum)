@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    long long A, B;
+    
+    while (scanf("%lld %lld", &A, &B) == 2) {
+        long long n = B - A + 1;
+        long long sum = n * (A + B) / 2;
+        printf("%lld\n", sum);
+    }
+
+    return 0;
+}
+
+
