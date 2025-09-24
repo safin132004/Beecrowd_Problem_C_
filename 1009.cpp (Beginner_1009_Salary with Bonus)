@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
+int main()
+{
+    string A ;
+    double B , C ;
+    cin >> A >> B >> C ;
+    double d = C * 0.15;
+    double dd = B + d ;
+    cout << "TOTAL = R$ " << fixed << setprecision(2) << dd << endl;
+    return 0;
+}
+
