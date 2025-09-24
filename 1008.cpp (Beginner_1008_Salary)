@@ -1,0 +1,14 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int A , B;
+    double C;
+    cin >> A >> B >> C ;
+    double d = B * C ;
+    cout << "NUMBER = " << A << endl;
+    cout << "SALARY = U$ " << fixed << setprecision(2) << d << endl;
+    return 0;
+}
+
