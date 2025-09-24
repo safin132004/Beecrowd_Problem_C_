@@ -1,6 +1,6 @@
 #include<iostream>
 #include<math.h>
-#include<iomanip>
+#include<iomanip> // using for setprecision
 using namespace std;
 int main()
 {
