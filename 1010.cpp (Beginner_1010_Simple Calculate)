@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int A , B , C , D ;
+    double E , F ;
+    cin >> A >> B >> E ;
+    cin >> C >> D >> F ;
+    double total = ( B * E ) + ( D * F ) ;
+    cout << "VALOR A PAGAR: R$ " << fixed << setprecision(2) << total << endl;
+    return 0;
+
+}
+
