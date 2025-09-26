@@ -9,4 +9,3 @@ int main()
     cout<< "X = " << X << endl ;
     return 0;
 }
-
