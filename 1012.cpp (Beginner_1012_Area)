@@ -1,0 +1,23 @@
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main()
+{
+    double A , B , C ;
+    double pi = 3.14159 ;
+    cin >> A >> B >> C ;
+    double TRI = 0.5 *  A * C ;
+    double CIR = pi * C * C ;
+    double TRA = 0.5 * ( A + B ) * C ;
+    double QUA = B * B ;
+    double REC = A * B ;
+    cout << "TRIANGULO: " << fixed << setprecision(3) << TRI << endl ;
+    cout << "CIRCULO: " << fixed << setprecision(3) << CIR << endl ;
+    cout << "TRAPEZIO: " << fixed << setprecision(3) << TRA << endl ;
+    cout << "QUADRADO: " << fixed << setprecision(3) << QUA << endl ;
+    cout << "RETANGULO: " << fixed << setprecision(3) << REC << endl ;
+    return 0;
+
+}
+
